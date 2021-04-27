@@ -13,9 +13,9 @@ export const Landing = () => {
       <div>
         <CharacterList />
       </div>
-      {/* <div>
+      <div>
         <EpisodeList />
-      </div> */}
+      </div>
     </div>
   );
 };
