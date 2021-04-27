@@ -1,0 +1,9 @@
+fragment CharacterCard on Character {
+  id
+  name
+  image
+  status
+  origin {
+    name
+  }
+}

@@ -1,0 +1,7 @@
+query CharacterModules($status: String) {
+  characters(filter: { status: $status}) {
+    results {
+      ...CharacterCard
+   }
+  }
+}
