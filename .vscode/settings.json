@@ -1,0 +1,21 @@
+{
+  "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "javascript.validate.enable": false,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "files.associations": {
+    "*.jsonrc": "jsonc"
+  },
+  "html.format.indentInnerHtml": true,
+}
