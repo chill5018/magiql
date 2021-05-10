@@ -6,6 +6,17 @@ interface ICharacterCardProps {
   character?: CharacterCardFragment;
 }
 
+export const renderStatus = (status?: string) => {
+  switch (status) {
+    case 'Alive':
+      return 'green';
+    case 'Dead':
+      return 'red';
+    default:
+      return 'lightgrey';
+  }
+};
+
 export const Character = (props: ICharacterCardProps) => {
   if (!props.character) {
     return null;
@@ -13,21 +24,10 @@ export const Character = (props: ICharacterCardProps) => {
 
   const { image, name, status, origin } = props.character;
 
-  const renderStatus = () => {
-    switch (status) {
-      case 'Alive':
-        return 'green';
-      case 'Dead':
-        return 'red';
-      default:
-        return 'lightgrey';
-    }
-  };
-
   return (
     <div
       className={css`
-        border: 1px solid ${renderStatus()};
+        border: 1px solid ${renderStatus(status ?? '')};
         border-radius: 4px;
         height: 100%;
       `}
